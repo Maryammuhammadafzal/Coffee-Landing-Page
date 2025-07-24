@@ -7,25 +7,25 @@ const ProcessPage = () => {
         {
             image : '/images/product-image-1.png',
             title: 'Sourcing',
-            description: 'Rich espresso with steamed milk and chocolate syrup, topped with whipped cream.'
+            description: 'Carefully selecting the best beans from responsible farmers.'
         },
         
         {
             image : '/images/product-image-2.png',
             title: 'Roasting',
-            description: ' Velvety espresso layered with steamed milk and drizzled with caramel.'
+            description: 'Artfully roasting to unlock rich, nuanced flavors.'
         },
         
         {
             image : '/images/product-image-3.png',
             title: 'Brewing',
-            description: 'Brewed coffee blended with warm milk for a smooth, classic flavor.'
+            description: 'Mastering techniques to bring out the best in every cup.'
         },
         
         {
             image : '/images/product-image-4.png',
             title: 'Enjoying',
-            description: 'Bold espresso with equal parts steamed milk and foam for a perfect balance.'
+            description: 'Sharing the joy of great coffee with you.'
         },
         
     ];
