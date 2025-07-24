@@ -5,25 +5,25 @@ import React from 'react'
 const ProcessPage = () => {
     const product_data = [
         {
-            image : '/images/product-image-1.png',
+            image : '/images/process-image-1.png',
             title: 'Sourcing',
             description: 'Carefully selecting the best beans from responsible farmers.'
         },
         
         {
-            image : '/images/product-image-2.png',
+            image : '/images/process-image-2.png',
             title: 'Roasting',
             description: 'Artfully roasting to unlock rich, nuanced flavors.'
         },
         
         {
-            image : '/images/product-image-3.png',
+            image : '/images/process-image-3.png',
             title: 'Brewing',
             description: 'Mastering techniques to bring out the best in every cup.'
         },
         
         {
-            image : '/images/product-image-4.png',
+            image : '/images/process-image-4.png',
             title: 'Enjoying',
             description: 'Sharing the joy of great coffee with you.'
         },
