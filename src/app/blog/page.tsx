@@ -19,8 +19,8 @@ const BlogPage = () => {
                     {
                         blog_data.map((blog, index) => (
                             <Card key={index} className='flex justify-start h-[450px] items-center bg-transparent shadow-none w-[390px] rounded-[20px] p-0'>
-                                <CardContent className='flex flex-col justify-start h-auto items-center text-center gap-8 p-0'>
-                                    <Image src={blog} alt="icon" width={115} height={115} className='w-full h-full' />
+                                <CardContent className='flex relative justify-start h-full items-center w-full text-center gap-8 p-0'>
+                                    <Image src={blog} alt="icon" width={115} height={115} className='w-full h-full object-cover object-center' />
                                     <div className='flex items-end justify-center w-full  absolute h-full top-0 left-0'>
                                         
                                     </div>
