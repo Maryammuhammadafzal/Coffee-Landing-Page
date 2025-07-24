@@ -41,12 +41,9 @@ const ProcessPage = () => {
                         process_data.map((process, index) => (
                             <Card key={index} className='flex justify-start min-h-[284px] items-center bg-transparent shadow-none w-auto h-full max-w-sm p-0'>
                                 <CardContent className='flex flex-col justify-start h-auto items-center text-center gap-2 p-0'>
-                                   <div className='flex justify-center items-end w-[290px] h-[290px] '>
-                                    <Image src={product.image} alt="icon" width={152} height={270} style={{ width: `${product.width}px`, height: `${product.height}px` }} />
-                                   </div>
-                                    <h2 className='font-mono text-3xl'>{product.title}</h2>
-                                    <p className=' text-base max-w-xs px-2'>{product.description}</p>
-                                    <p className='text-xl text-primary text-center'>{product.price}</p>
+                                    <Image src={process.image} alt="icon" width={115} height={115} />
+                                    <h2 className='font-mono text-2xl'>{process.title}</h2>
+                                    <p className=' text-base max-w-xs px-2'>{process.description}</p>
                                 </CardContent>
                             </Card>
                         ))
