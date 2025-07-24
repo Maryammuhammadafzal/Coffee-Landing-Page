@@ -4,6 +4,7 @@ import AboutPage from "./about/page";
 import FeaturePage from "./feature/page";
 import ProductPage from "./product/page";
 import ProcessPage from "./process/page";
+import BlogPage from "./blog/page";
 
 export default function Home() {
   return (
@@ -13,6 +14,7 @@ export default function Home() {
     <FeaturePage/>
     <ProductPage/>
     <ProcessPage/>
+    <BlogPage/>
    </div>
   );
 }

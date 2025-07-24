@@ -16,13 +16,13 @@ const BlogPage = () => {
                     <h2 className='font-mono text-5xl pt-5 pl-4 leading-16 text-primary '>Behind the Beans</h2>
                 </div>
 
-                <div className='xl:w-[90%] lg:w-[95%] w-full grid lg:grid-cols-4 sm:grid-cols-2 grid-cols-1 gap-10 mx-auto justify-center items-center h-full'>
+                <div className='xl:w-[90%] lg:w-[95%] w-full grid lg:grid-cols-3 sm:grid-cols-2 grid-cols-1 gap-10 mx-auto justify-center items-center h-full'>
                     {
                         blog_data.map((blog, index) => (
-                            <Card key={index} className='flex justify-start h-[450px] items-center bg-transparent shadow-none w-[390px] rounded-[20px] p-0'>
-                                <CardContent className='flex relative justify-start h-full items-center w-full text-center gap-8 p-0'>
-                                    <Image src={blog} alt="icon" width={115} height={115} className='w-full h-full object-cover object-center' />
-                                    <div className='flex py-12 items-end justify-center w-full  absolute h-full top-0 left-0'>
+                            <Card key={index} className='flex justify-start h-[450px] bg-cover bg-center items-center bg-transparent shadow-none w-[390px] rounded-[20px] p-0' style={{ backgroundImage: `url('${blog}')`}}>
+                                <CardContent className='flex justify-center h-full items-center w-full rounded-[20px] text-center gap-8 p-0' >
+                                    {/* <Image src={blog} alt="icon" width={115} height={115} className='w-full h-full rounded-[20px] object-cover object-center' /> */}
+                                    <div className='flex py-12 items-end justify-center w-full h-full'>
                                          <Button className='w-[220px] text-lg h-[50px] bg-primary text-primary-foreground'>Read Full Blog</Button>
                                     </div>
                                 </CardContent>
