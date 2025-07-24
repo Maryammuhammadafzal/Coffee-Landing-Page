@@ -1,4 +1,5 @@
 import Header from '@/components/Header'
+import TestimonialCarousel from '@/components/TestimonialCarousel'
 import { Button } from '@/components/ui/button'
 import Image from 'next/image'
 import React from 'react'
@@ -23,13 +24,21 @@ const HeroPage = () => {
 
         <div className='w-auto h-auto'>
           <div className='flex flex-col gap-3 max-w-xs h-auto'>
-          <p className='text-xl leading-9'>Experience the art of coffee — freshly roasted, ethically sourced, and brewed to perfection.</p>
-          <Button className='w-[220px] text-lg h-[50px] bg-primary text-primary-foreground'>Shop Now</Button>
-        </div>
+            <p className='text-xl leading-9'>Experience the art of coffee — freshly roasted, ethically sourced, and brewed to perfection.</p>
+            <Button className='w-[220px] text-lg h-[50px] bg-primary text-primary-foreground'>Shop Now</Button>
+          </div>
 
         </div>
-        <div className='max-w-xs w-xs h-auto bg-secondary'>
-          
+        <div className='w-auto h-auto flex gap-6'>
+          <div className='max-w-xs w-xs h-auto'>
+            <Image src='/images/vector-1.png' alt='image' width={300} height={200} className='w-full h-full' />
+          </div>
+
+          <div className='w-md h-auto bg-primary rounded-[400px] flex justify-center items-center'>
+            <TestimonialCarousel/>
+          </div>
+
+
         </div>
       </div>
     </div>
