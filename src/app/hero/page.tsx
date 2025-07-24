@@ -30,12 +30,12 @@ const HeroPage = () => {
           </div>
 
         </div>
-        <div className='w-auto h-auto xl:pt-2 flex gap-6'>
-          <div className='max-w-xs relative xl:w-xs w-[300px] h-auto'>
+        <div className='w-auto h-auto xl:pt-2 flex xl:flex-row flex-col max-xl:items-end gap-6'>
+          <div className='xl:max-w-xs max-xl:hidden relative xl:w-xs w-[80%] xl:h-auto h-[200px]'>
             <Image src='/images/vector-1.png' alt='image' width={300} height={200} className='w-full h-full' />
             <div className='w-full h-full flex absolute top-0 left-0'>
               <div className='content w-full h-full p-2 text-background flex flex-col gap-3 relative'>
-                <div className='arrow w-[107px] h-[107px] flex justify-center items-center absolute top-0 right-0 rounded-full bg-background text-'>
+                <div className='arrow w-[107px] h-[107px] flex justify-center items-center absolute top-0 right-0 rounded-full xl:bg-background text-'>
                   <Image src='/images/up-right-icon.png' alt="icon" width={30} height={30} />
                 </div>
 
@@ -47,7 +47,7 @@ const HeroPage = () => {
             </div>
           </div>
 
-          <div className='xl:w-md w-sm h-auto bg-primary rounded-[400px] flex justify-center items-center'>
+          <div className='xl:w-md w-[80%] h-auto bg-primary rounded-[400px] flex justify-center items-center'>
             <TestimonialCarousel />
           </div>
 

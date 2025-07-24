@@ -24,7 +24,7 @@ const FeaturePage = () => {
                     <h2 className='font-mono text-5xl pt-5 pl-4 leading-16 text-primary '>Roasted to Perfection</h2>
                 </div>
 
-                <div className='w-full flex gap-4 justify-center items-center h-full'>
+                <div className='w-full flex gap-4 flex-wrap justify-center items-center h-full'>
                     {
                         feature_data.map((feature, index) => (
                             <Card key={index} className='border border-primary flex justify-center min-h-[284px] items-center bg-transparent shadow-none w-auto h-auto max-w-xs'>

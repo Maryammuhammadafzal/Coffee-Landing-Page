@@ -30,7 +30,7 @@ const ProcessPage = () => {
 
     ];
     return (
-        <div className='w-full h-full flex justify-center items-center lg:py-20 md:py-15 sm:py-10 py-5 px-8'>
+        <div className='w-full h-full flex justify-center items-center lg:py-20 md:py-15 sm:py-10 py-5 xl:px-8'>
             <div className='md:px-6 px-4 w-full h-full flex flex-col justify-center gap-12 items-center'>
                 <div className='content w-full justify-center items-center h-full flex gap-4'>
                     <h2 className='font-mono text-5xl pt-5 pl-4 leading-16 text-primary '>Our Process</h2>

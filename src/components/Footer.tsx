@@ -36,9 +36,9 @@ const Footer = () => {
     ];
     return (
         <div className="w-full  h-auto gap-5 flex justify-center items-center py-10 px-3">
-            <div className=" w-[80%] max-lg:w-[95%] max-md:w-full  h-auto flex flex-col gap-10 justify-center items-center">
-                <div className="footerContent w-full h-auto flex mb-3 gap-6 ">
-                    <div className="left w-auto min-w-md max-sm:flex max-sm:flex-col max-sm:justify-center max-sm:items-center p-3 h-auto">
+            <div className=" w-[80%] max-lg:w-[95%] max-md:w-full   h-auto flex flex-col gap-10 justify-center items-center">
+                <div className="footerContent w-full h-auto flex-wrap flex mb-3 gap-6 ">
+                    <div className="left w-auto lg:min-w-md md:min-w-sm min-w-xs max-sm:flex max-sm:flex-col max-sm:justify-center max-sm:items-center p-3 h-auto">
                         {/* Logo */}
                         <div className="logo flex flex-col gap-6 ">
                             <Image src='/images/logo.png' alt="image" width={220} height={110} />
@@ -54,7 +54,7 @@ const Footer = () => {
 
                     </div>
 
-                    <div className="max-sm:w-full max-sm:py-3 min-w-[240px] p-3 h-auto ">
+                    <div className="max-sm:w-full max-sm:py-3 lg:min-w-[240px] md:min-w-[200px] w-[170px] p-3 h-auto ">
                         <h4 className='font-mono lg:text-xl text-lg font-bold text-primary w-fit'>Quick Links</h4>
                         <ul className="list-none text-base py-2 gap-[2px] flex flex-col ">
                             {
