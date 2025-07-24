@@ -3,31 +3,10 @@ import Image from 'next/image'
 import React from 'react'
 
 const BlogPage = () => {
-    const process_data = [
-        {
-            image: '/images/process-image-1.png',
-            title: 'Sourcing',
-            description: 'Carefully selecting the best beans from responsible farmers.'
-        },
-
-        {
-            image: '/images/process-image-2.png',
-            title: 'Roasting',
-            description: 'Artfully roasting to unlock rich, nuanced flavors.'
-        },
-
-        {
-            image: '/images/process-image-3.png',
-            title: 'Brewing',
-            description: 'Mastering techniques to bring out the best in every cup.'
-        },
-
-        {
-            image: '/images/process-image-4.png',
-            title: 'Enjoying',
-            description: 'Sharing the joy of great coffee with you.'
-        },
-
+    const blog_data = [
+      '/images/blog-image-1.png',
+      '/images/blog-image-2.png',
+      '/images/blog-image-3.png',
     ];
     return (
         <div className='w-full h-full flex justify-center items-center lg:py-20 md:py-15 sm:py-10 py-5 px-8'>
@@ -38,7 +17,7 @@ const BlogPage = () => {
 
                 <div className='xl:w-[90%] lg:w-[95%] w-full grid lg:grid-cols-4 sm:grid-cols-2 grid-cols-1 gap-10 mx-auto justify-center items-center h-full'>
                     {
-                        process_data.map((process, index) => (
+                        blog_data.map((process, index) => (
                             <Card key={index} className='flex justify-start min-h-[284px] items-center bg-transparent shadow-none w-auto h-full max-w-sm p-0'>
                                 <CardContent className='flex flex-col justify-start h-auto items-center text-center gap-8 p-0'>
                                     <Image src={process.image} alt="icon" width={115} height={115} />
