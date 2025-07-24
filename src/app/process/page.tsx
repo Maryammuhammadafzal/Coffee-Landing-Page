@@ -6,25 +6,25 @@ const ProcessPage = () => {
     const product_data = [
         {
             image : '/images/product-image-1.png',
-            title: 'Mocha',
+            title: 'Sourcing',
             description: 'Rich espresso with steamed milk and chocolate syrup, topped with whipped cream.'
         },
         
         {
             image : '/images/product-image-2.png',
-            title: 'Caramel Macchiato',
+            title: 'Roasting',
             description: ' Velvety espresso layered with steamed milk and drizzled with caramel.'
         },
         
         {
             image : '/images/product-image-3.png',
-            title: 'Café au Lait',
+            title: 'Brewing',
             description: 'Brewed coffee blended with warm milk for a smooth, classic flavor.'
         },
         
         {
             image : '/images/product-image-4.png',
-            title: 'Cappuccino',
+            title: 'Enjoying',
             description: 'Bold espresso with equal parts steamed milk and foam for a perfect balance.'
         },
         
