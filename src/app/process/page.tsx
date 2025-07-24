@@ -2,60 +2,30 @@ import { Card, CardContent } from '@/components/ui/card'
 import Image from 'next/image'
 import React from 'react'
 
-const ProductPage = () => {
+const ProcessPage = () => {
     const product_data = [
         {
             image : '/images/product-image-1.png',
-            price: 'Price — $4.50',
             title: 'Mocha',
-            description: 'Rich espresso with steamed milk and chocolate syrup, topped with whipped cream.',
-            width: 152,
-            height: 270
+            description: 'Rich espresso with steamed milk and chocolate syrup, topped with whipped cream.'
         },
         
         {
             image : '/images/product-image-2.png',
-            price: 'Price — $4.75',
             title: 'Caramel Macchiato',
-            description: ' Velvety espresso layered with steamed milk and drizzled with caramel.',
-            width: 166,
-            height: 258
+            description: ' Velvety espresso layered with steamed milk and drizzled with caramel.'
         },
         
         {
             image : '/images/product-image-3.png',
-            price: 'Price — $3.50',
             title: 'Café au Lait',
-            description: 'Brewed coffee blended with warm milk for a smooth, classic flavor.',
-            width: 162,
-            height: 237
+            description: 'Brewed coffee blended with warm milk for a smooth, classic flavor.'
         },
         
         {
             image : '/images/product-image-4.png',
-            price: 'Price — $4.00',
             title: 'Cappuccino',
-            description: 'Bold espresso with equal parts steamed milk and foam for a perfect balance.',
-            width: 208,
-            height: 251
-        },
-        
-        {
-            image : '/images/product-image-5.png',
-            price: 'Price — $3.00',
-            title: 'Americano',
-            description: 'Espresso diluted with hot water for a smooth, strong black coffee.',
-            width: 283,
-            height: 283
-        },
-        
-        {
-            image : '/images/product-image-6.png',
-            price: 'Price — $4.25',
-            title: 'Latte',
-            description: 'Espresso with plenty of steamed milk and a light foam topping — creamy & mellow.',
-            width: 181,
-            height: 257
+            description: 'Bold espresso with equal parts steamed milk and foam for a perfect balance.'
         },
         
     ];
@@ -88,4 +58,4 @@ const ProductPage = () => {
     )
 }
 
-export default ProductPage
+export default ProcessPage
