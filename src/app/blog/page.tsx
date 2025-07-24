@@ -12,18 +12,17 @@ const BlogPage = () => {
         <div className='w-full h-full flex justify-center items-center lg:py-20 md:py-15 sm:py-10 py-5 px-8'>
             <div className='md:px-6 px-4 w-full h-full flex flex-col justify-center gap-12 items-center'>
                 <div className='content w-full justify-center items-center h-full flex gap-4'>
-                    <h2 className='font-mono text-5xl pt-5 pl-4 leading-16 text-primary '>Our Process</h2>
+                    <h2 className='font-mono text-5xl pt-5 pl-4 leading-16 text-primary '>Behind the Beans</h2>
                 </div>
 
                 <div className='xl:w-[90%] lg:w-[95%] w-full grid lg:grid-cols-4 sm:grid-cols-2 grid-cols-1 gap-10 mx-auto justify-center items-center h-full'>
                     {
-                        blog_data.map((process, index) => (
-                            <Card key={index} className='flex justify-start min-h-[284px] items-center bg-transparent shadow-none w-auto h-full max-w-sm p-0'>
+                        blog_data.map((blog, index) => (
+                            <Card key={index} className='flex justify-start h-[450px] items-center bg-transparent shadow-none w-[390px] rounded-[20px] p-0'>
                                 <CardContent className='flex flex-col justify-start h-auto items-center text-center gap-8 p-0'>
-                                    <Image src={process.image} alt="icon" width={115} height={115} />
-                                    <div className='flex flex-col w-full h-auto'>
-                                        <h2 className='font-mono text-2xl'>{process.title}</h2>
-                                        <p className=' text-base max-w-xs px-2'>{process.description}</p>
+                                    <Image src={blog} alt="icon" width={115} height={115} className='w-full h-full' />
+                                    <div className='flex items-end justify-center w-full  absolute h-full top-0 left-0'>
+                                        
                                     </div>
                                 </CardContent>
                             </Card>
