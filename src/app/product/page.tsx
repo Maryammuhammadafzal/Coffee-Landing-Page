@@ -36,6 +36,8 @@ const ProductPage = () => {
             price: 'Price — $4.00',
             title: 'Cappuccino',
             description: 'Bold espresso with equal parts steamed milk and foam for a perfect balance.',
+            width: 208,
+            height: 251
         },
         
         {
@@ -43,6 +45,8 @@ const ProductPage = () => {
             price: 'Price — $3.00',
             title: 'Americano',
             description: 'Espresso diluted with hot water for a smooth, strong black coffee.',
+            width: 283,
+            height: 283
         },
         
         {
@@ -50,6 +54,8 @@ const ProductPage = () => {
             price: 'Price — $4.25',
             title: 'Latte',
             description: 'Espresso with plenty of steamed milk and a light foam topping — creamy & mellow.',
+            width: 181,
+            height: 257
         },
         
     ];
@@ -65,7 +71,7 @@ const ProductPage = () => {
                         product_data.map((product, index) => (
                             <Card key={index} className='flex justify-end min-h-[284px] items-center bg-transparent shadow-none w-auto h-full max-w-xs'>
                                 <CardContent className='flex flex-col justify-end items-center text-center gap-2'>
-                                    <Image src={product.image} alt="icon" width={152} height={270}   />
+                                    <Image src={product.image} alt="icon" width={152} height={270} className={`w-[${product.width}] h-[${product.height}]`}  />
                                     <h2 className='font-mono text-3xl'>{product.title}</h2>
                                     <p className=' text-base '>{product.description}</p>
                                     <p className='text-xl text-primary text-center'>{product.price}</p>
