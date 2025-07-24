@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Catamaran, Castoro_Titling } from "next/font/google";
 import "./globals.css";
+import Footer from "@/components/Footer";
 
 const catamaran = Catamaran({
   variable: "--font-catamaran",
@@ -29,6 +30,7 @@ export default function RootLayout({
         className={`${catamaran.variable} ${castoroTitling.variable} antialiased`}
       >
         {children}
+        <Footer/>
       </body>
     </html>
   );
