@@ -19,24 +19,25 @@ const FeaturePage = () => {
     ];
     return (
         <div className='w-full h-full flex justify-center items-center lg:py-20 md:py-15 sm:py-10 py-5 px-8'>
-            <div className='md:px-6 px-4 w-full h-full flex flex-col gap-4 items-center'>
-                <div className='content w-full  h-full flex flex-col gap-4'>
-                    <h2 className='font-mono text-5xl pt-5 pl-4 leading-16 text-primary '>From Bean to Brew</h2>
+            <div className='md:px-6 px-4 w-full h-full flex flex-col justify-center gap-10 items-center'>
+                <div className='content w-full justify-center items-center h-full flex gap-4'>
+                    <h2 className='font-mono text-5xl pt-5 pl-4 leading-16 text-primary '>Roasted to Perfection</h2>
+                </div>
+
+                <div className='w-full flex gap-4 justify-center items-center h-full'>
+                    {
+                        feature_data.map((feature, index) => (
+                            <Card key={index} className='border border-primary flex justify-center min-h-[284px] items-center bg-transparent shadow-none w-auto h-auto max-w-xs'>
+                                <CardContent className='flex flex-col text-center gap-3'>
+                                    <h2 className='font-mono text-3xl'>{feature.title}</h2>
+                                    <p className=' text-base '>{feature.description}</p>
+                                </CardContent>
+                            </Card>
+                        ))
+                    }
                 </div>
             </div>
 
-            <div className='w-full mx-auto flex justify-center pr-20 items-center h-full'>
-                {
-                    feature_data.map((feature, index) => (
-                        <Card className='border border-primary flex justify-center items-center bg-transparent shadow-none w-auto h-auto max-w-xs'>
-                            <CardContent className='flex flex-col gap-3'>
-                                <h2 className='font-mono text-3xl'>{feature.title}</h2>
-                                <p className=' text-lg leading-8 px-4'>{feature.description}</p>
-                            </CardContent>
-                        </Card>
-                    ))
-                }
-            </div>
         </div>
     )
 }
