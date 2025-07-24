@@ -12,6 +12,18 @@ const AboutPage = () => {
 Whether you’re enjoying a cup in our cozy café or brewing at home, our mission is to deliver unforgettable flavors and a moment of joy in every sip.</p>
                                         </div>
             </div>
+
+            <div className='w-1/2 flex justify-center relative items-center h-full'>
+                <div className='w-auto h-auto flex justify-center items-center absolute left-[0%] -rotate-12'>
+                    <Image src='/images/about-coffee-1.png' alt="icon" width={237} height={393} className='w-[273px] h-[393px]' />
+                </div>
+                <div className='w-auto h-auto flex justify-center items-center absolute z-10'>
+                    <Image src='/images/about-coffee-2.png' alt="icon" width={272} height={447} className='w-[272px] h-auto' />
+                </div>
+                <div className='w-auto h-auto flex justify-center items-center absolute right-[14%] -bottom-42 rotate-12'>
+                    <Image src='/images/about-coffee-3.png' alt="icon" width={254} height={393} className='w-auto h-auto' />
+                </div>
+            </div>
         </div>
     )
 }
