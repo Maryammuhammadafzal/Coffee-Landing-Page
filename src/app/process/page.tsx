@@ -39,7 +39,7 @@ const ProcessPage = () => {
                 <div className='xl:w-[90%] lg:w-[95%] w-full grid lg:grid-cols-4 sm:grid-cols-2 grid-cols-1 gap-10 mx-auto justify-center items-center h-full'>
                     {
                         process_data.map((process, index) => (
-                            <Card key={index} className='flex justify-start min-h-[284px] items-center bg-transparent shadow-none w-auto h-full max-w-sm p-0'>
+                            <Card key={index} className='flex justify-start mx-auto min-h-[284px] items-center bg-transparent shadow-none w-auto h-full max-w-sm p-0'>
                                 <CardContent className='flex flex-col justify-start h-auto items-center text-center gap-8 p-0'>
                                     <Image src={process.image} alt="icon" width={115} height={115} />
                                     <div className='flex flex-col w-full h-auto'>

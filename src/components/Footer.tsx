@@ -38,7 +38,7 @@ const Footer = () => {
         <div className="w-full  h-auto gap-5 flex justify-center items-center py-10 px-3">
             <div className="xl:w-[85%] lg:w-[95%] w-full h-auto  gap-10 justify-center items-center">
                 <div className="footerContent w-full h-auto max-md:flex-wrap flex mb-3 gap-6 ">
-                    <div className="left w-auto lg:min-w-sm min-w-xs max-sm:flex max-sm:flex-col max-sm:justify-center max-sm:items-center p-3 h-auto">
+                    <div className="left max-sm:w-full lg:min-w-sm min-w-xs max-sm:flex max-sm:flex-col max-sm:justify-center max-sm:items-center p-3 h-auto">
                         {/* Logo */}
                         <div className="logo flex flex-col gap-6 ">
                             <Image src='/images/logo.png' alt="image" width={220} height={110} />
