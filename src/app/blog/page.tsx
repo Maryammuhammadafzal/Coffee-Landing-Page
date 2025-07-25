@@ -20,7 +20,7 @@ const BlogPage = () => {
                     {
                         blog_data.map((blog, index) => (
                          <div className='xs:w-auto w-full h-auto flex justify-center items-center'>
-                               <Card key={index} className='flex justify-center h-[450px] bg-cover bg-center items-center bg-transparent shadow-none w-[390px] rounded-[20px] p-0' style={{ backgroundImage: `url('${blog}')`}}>
+                               <Card key={index} className='flex justify-center lg:h-[450px] h-[400px] bg-cover bg-center items-center bg-transparent shadow-none lg:w-[390px] w-[350px] rounded-[20px] p-0' style={{ backgroundImage: `url('${blog}')`}}>
                                 <CardContent className='flex justify-center h-full items-center w-full rounded-[20px] text-center gap-8 p-0' >
                                     {/* <Image src={blog} alt="icon" width={115} height={115} className='w-full h-full rounded-[20px] object-cover object-center' /> */}
                                     <div className='flex py-12 items-end justify-center w-full h-full'>
