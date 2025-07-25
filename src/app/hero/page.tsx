@@ -7,7 +7,7 @@ import React from 'react'
 
 const HeroPage = () => {
   return (
-    <div className='w-full h-auto lg:min-h-screen flex flex-col justify-center items-center py-6 xl:px-8 px-4'>
+    <div className='w-full h-auto xl:min-h-screen flex flex-col justify-center items-center py-6 xl:px-8 md:px-4 px-2'>
       <div className='w-full relative'>
         <Image src='/images/hero-image.png' alt='image' width={1000} height={200} className='w-full h-full' />
 
@@ -17,7 +17,7 @@ const HeroPage = () => {
         </div>
         {/* Content */}
         <div className='content absolute -bottom-6 left-0 lg:max-w-md max-w-sm 2xl:pl-12 xl:pl-8 lg:pl-3'>
-          <h1 className='font-mono lg:leading-16 leading-13 xl:text-5xl lg:text-[40px] text-4xl'>Crafted for Coffee Lovers</h1>
+          <h1 className='font-mono lg:leading-16 leading-13 xl:text-5xl lg:text-[40px] text-[32px] pr-10'>Crafted for Coffee Lovers</h1>
         </div>
       </div>
 
