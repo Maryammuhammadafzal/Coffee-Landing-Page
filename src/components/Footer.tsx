@@ -36,9 +36,9 @@ const Footer = () => {
     ];
     return (
         <div className="w-full  h-auto gap-5 flex justify-center items-center py-10 px-3">
-            <div className="lg:w-[85%] md:w-[95%] w-full h-auto  gap-10 justify-center items-center">
-                <div className="footerContent w-full h-auto flex mb-3 gap-6 ">
-                    <div className="left w-auto lg:min-w-md md:min-w-sm min-w-xs max-sm:flex max-sm:flex-col max-sm:justify-center max-sm:items-center p-3 h-auto">
+            <div className="xl:w-[85%] lg:w-[95%] w-full h-auto  gap-10 justify-center items-center">
+                <div className="footerContent w-full h-auto max-lg:flex-wrap flex mb-3 gap-6 ">
+                    <div className="left w-auto min-w-sm max-sm:flex max-sm:flex-col max-sm:justify-center max-sm:items-center p-3 h-auto">
                         {/* Logo */}
                         <div className="logo flex flex-col gap-6 ">
                             <Image src='/images/logo.png' alt="image" width={220} height={110} />
@@ -54,7 +54,7 @@ const Footer = () => {
 
                     </div>
 
-                    <div className="max-sm:w-full max-sm:py-3 max-w-sm p-3 h-auto ">
+                    <div className="max-sm:w-full max-sm:py-3 max-w-sm w-[250px] p-3 h-auto ">
                         <h4 className='font-mono lg:text-xl text-lg font-bold text-primary w-fit'>Quick Links</h4>
                         <ul className="list-none text-base py-2 gap-[2px] flex flex-col ">
                             {
@@ -68,7 +68,7 @@ const Footer = () => {
                             }
                         </ul>
                     </div>
-                    <div className="left max-sm:w-full  gap-10 bg-amber-400 w-full  p-3 h-auto max-w-sm">
+                    <div className="left max-sm:w-full  gap-10 w-full  p-3 h-auto max-w-sm">
                         <h4 className='font-mono lg:text-xl text-lg font-bold text-primary w-fit'> Contact Information</h4>
                         <ul className="list-none py-2 gap-2 flex flex-col ">
                             <li className="text-base  font-normal ">
