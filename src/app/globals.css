@@ -123,4 +123,5 @@
 
 @theme {
   --breakpoint-hxs: 72rem;
+  --breakpoint-xs: 28rem;
 }
