@@ -28,10 +28,6 @@ const Footer = () => {
             link: '/blog',
             name: 'Blogs',
         },
-        {
-            link: '/contact',
-            name: 'Contact Us',
-        },
 
     ];
     return (
@@ -87,7 +83,7 @@ const Footer = () => {
                     </div>
                 </div>
                 <div className="copyright flex gap-4 justify-center items-center w-full h-auto pt-4">
-                    <p className="md:text-sm text-xs text-center">© 2021 all copyright reserved. All Rights Reserved. <Link href='/' className="underline"> Rootlet Solution</Link></p>
+                    <p className="md:text-sm text-xs text-center">© 2021 all copyright reserved. All Rights Reserved. <Link target="_blank" href='https://rootletsolutions.com/' className="underline"> Rootlet Solution</Link></p>
 
                 </div>
             </div>

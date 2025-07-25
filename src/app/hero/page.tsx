@@ -1,7 +1,6 @@
 import Header from '@/components/Header'
 import TestimonialCarousel from '@/components/TestimonialCarousel'
 import { Button } from '@/components/ui/button'
-import { ArrowUpRight } from 'lucide-react'
 import Image from 'next/image'
 import React from 'react'
 
